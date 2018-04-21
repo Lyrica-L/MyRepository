@@ -1,0 +1,18 @@
+/*********************
+*name：插件的CSS样式
+*date：2018/03/14
+*author：Liu Li
+*remarks：null
+*/
+
+.plus_input{
+    width:20px;height:20px;
+    background-repeat: no-repeat;
+    background-size:100%;
+}
+.plus_checkbox_0{
+    background-image: url("../../imgs/plus/plus_check_0.png");
+}
+.plus_checkbox_1{
+    background-image: url("../../imgs/plus/plus_check_1.png");
+}

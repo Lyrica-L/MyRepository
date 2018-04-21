@@ -1,0 +1,32 @@
+/**************
+*name：公共样式
+*date：2018/01/31
+*author：Liu Li
+*remarks：null
+*/
+
+.mT_10{margin-top: 10px;}
+.mT_5{margin-top: 5px;}
+.mL_10{margin-left: 10px;}
+.mR_10{margin-right: 10px;}
+.fl{float:left; }
+.fr{float:right;}
+.cle{clear: both;}
+.pr{position: relative;}
+.pb{position: absolute;}
+.redFontColor{color:#f00;}
+.songFont{font-family: "宋体";}
+
+/* 红色背景色 */
+.redBg{
+    background:#ff0000!important;
+}
+.cle:after{
+    content: " ";
+    display: block;
+    height:0;
+    clear:both;
+}
+.border{border:1px solid #ccc;}
+.arrClose{background-image: url("../../imgs/arr-closeR.png");}
+.arrOpen{background-image: url("../../imgs/arr-openR.png");}

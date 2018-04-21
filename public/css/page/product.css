@@ -1,0 +1,206 @@
+/**************
+*name：产品详情页
+*date：2018/02/02
+*author：刘丽
+*remarks：null
+*/
+
+/* 左边产品图片 */
+.goodsImgWrap{
+    width: 500px;height: 600px;float: left;
+    position: relative;
+}
+/* 产品大图 */
+.bigImgDiv{
+    width: 500px;height: 500px;
+    border:1px solid #ddd;
+    clear: both;position: relative;
+}
+.bigImgDiv img#bigImgId{
+    width: 500px;height: 500px;
+}
+/* 大图上的半透明块 */
+.mouseMoveDiv{
+    width: 337.84px;height: 337.84px;
+    background: #FBB854;opacity: 0.5;
+    cursor: move;position: absolute;top:0;
+    display: none;
+}
+/* 局部放大框 */
+.localShowImgWrap{
+    width: 540px;height: 540px;
+    position: absolute;top:0;right:-544px;
+    background: #e6e6ed;
+    border: 1px solid #ddd;
+    display: none;overflow: hidden;
+    z-index: 1;
+}
+.localShowImgWrap img{
+    width: 800px;height: 800px;
+    max-width: none;
+}
+/*.bigImgDiv:hover .localShowImgWrap{*/
+    /*display: block;*/
+/*}*/
+/* 产品小图 */
+.smallImgList{
+    width: 500px;height:70px;
+    margin: 10px auto;
+    position: relative;
+    overflow: hidden;
+}
+.smallImgList label,.smallImgList span{
+    width:30px;height: 60px;
+    text-align: center;
+    line-height: 60px;
+    background: #ccc;
+    position: absolute;top:0px;
+    display: block;cursor: pointer;
+    z-index:2;
+}
+.smallImgList label{
+    left: 0;
+}
+.smallImgList span{
+    right: 0;
+}
+.smallImgList label:hover,.smallImgList span:hover{
+    background: #666;
+}
+.smallImgList ul{
+    width: 422px;height: 60px;
+    display: block;
+    position: absolute;top: 0px;left: 40px;
+    overflow: hidden;
+}
+.smallImgList ul li{
+    width: 56px;height: 56px;
+    float: left;margin: 0 12px;
+    border: 2px solid #fff;
+}
+.smallImgList ul li:hover{
+    border: 2px solid #f00;
+}
+.smallImgList ul li img{
+    width: 56px;height: 56px;
+}
+/* 右边产品信息 */
+.goodsInfoWrap{
+    width: 670px;height:400px;float: right;
+}
+.goodsInfoWrap h1{
+    font-size: 22px;color: #666666;font-weight: bold;
+}
+.inforList{
+    clear: both;overflow: hidden;margin-bottom: 20px;
+}
+.inforList li{
+    font-size: 14px;color: #f00;
+}
+/* 配送地址 */
+.addressMenuTitle{
+    width: 470px;height: 26px;
+    font-size: 14px;color: #666;
+    position: relative;
+    overflow: hidden;
+}
+.addressMenuTitle p{
+    width: 60px;float: left;line-height: 32px;
+}
+.addressMenuTitle ul{
+    float: left;
+    /*border:1px solid #666;*/
+    border-bottom: 0;padding: 5px 28px 0 5px;
+    /*background-image: url("../../imgs/arr-closeR.png");*/
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-color: #fff;
+    cursor: pointer;
+}
+.addressMenuTitle ul li{
+    float: left;padding-right: 6px;
+}
+/* 地址选项 */
+.addressMenuList{
+    width: 380px;margin: -1px 0 0 60px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: none;
+}
+.addressMenuList h1{
+    width: 100%;height: 25px;line-height: 25px;
+    margin: 24px 0 15px 0;
+    font-size: 14px;font-weight: normal;
+    background-image: url("../../imgs/icon_5.jpg");
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+/* 三个tab按钮 */
+.tabBtn{
+    width: 100%;height: 26px;margin-bottom: 12px;
+}
+.tabBtn ul{
+    height: 24px;
+    border-bottom:2px solid #EDD28B;display: block;
+}
+.tabBtn ul li{
+    height: 24px;float: left;line-height: 24px;
+    background-color: #fff;
+    font-size: 14px;color: #005AB4;font-weight: bold;
+    padding:0 11px;
+    border:1px solid #ccc;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.tabBtn li.yellowBorder{
+    border:2px solid #EDD28B;
+    border-bottom: 2px solid #fff;
+    margin-top: -1px;
+}
+/* 省市县备选列表 */
+.tabNameList{
+    width: 100%;overflow: hidden;
+}
+.tabNameList li{
+    width: 80px;height: 18px;
+    float: left;
+    margin-bottom: 5px;
+    overflow: hidden;text-overflow: ellipsis;white-space: nowrap;
+    cursor: pointer;
+    color: #666;
+}
+.tabBtn li:hover,.tabNameList li:hover{
+    background-color: #E3E4E5;
+}
+/* 产品数量&加入购物车 */
+.gotoShopCar{
+    height: 60px;
+    margin: 21px 0 0 70px;
+}
+.numToCar{
+    width: 58px;height: 48px;
+    float: left;
+    border: 1px solid #666;
+    overflow: hidden;
+}
+.numToCar input.g_a{
+    width: 40px;height: 48px;float: left;
+    border: 0;
+    text-align: center;
+}
+.numToCar input.g_b,.numToCar input.g_c{
+    width: 18px;height: 25px;float: left;border: 0;
+    border-left: 1px solid #666;
+    border-bottom: 1px solid #666;
+}
+.numToCarBtn{
+    width: 157px;height: 50px;border: 0;
+    margin-left: 20px;
+    background: #f00;
+    font-size: 22px;color: #fff;
+    font-weight: bold;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    float: left;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购物车-电商网站</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="css/layout.css"/>
+    <link rel="stylesheet" type="text/css" href="css/component/header.css"/>
+    <link rel="stylesheet" type="text/css" href="css/page/cart.css"/>
+    <link rel="stylesheet" type="text/css" href="css/plus/input_check.css"/>
+</head>
+<body>
+    <!-- 购物车列表标题 -->
+    <div class="cartTittle">
+        <label>全部商品<i id="totalNumId"></i></label>
+    </div>
+    <!-- 购物车列表表头 -->
+    <div class="cartWrap">
+        <ul>
+            <li class="cwli_1">
+                <input class="checkAllBtn" type="checkbox" id="chBox" checked>
+                <label for="chBox">全选</label>
+            </li>
+            <li class="cwli_2">商品</li>
+            <li class="cwli_3">单价</li>
+            <li class="cwli_4">数量</li>
+            <li class="cwli_5">小计</li>
+            <li class="cwli_6">操作</li>
+        </ul>
+    </div>
+    <!-- 购物车列表主体部分 -->
+    <div id="cartMainWrapId" class="cartMainWrap cle"></div>
+    <!-- 购物车列表结尾部分 -->
+    <div class="cartFooter">
+        <ul>
+            <input class="checkAllBtn" type="checkbox" id="chBoxTotal" checked>
+            <label for="chBoxTotal">全选</label>
+            <p>删除选中的商品</p>
+        </ul>
+        <div class="checkGoodsNum">已选择<i id="selectedNumId">4</i>件商品</div>
+        <div class="totalPrice">总价：<i id="totalPriceId">￥5999.00</i></div>
+        <div class="rebates">已节省：<i>-￥0.00</i></div>
+        <input class="gotoPayBtn" type="button" value="去结算">
+    </div>
+    <br/>
+    <br/>
+</body>
+<script type="text/javascript" src="js/lib/jquery-1.7.2.js"></script>
+<script type="text/javascript" src="js/plus/plus_input.js"></script>
+<script type="text/javascript" src="js/config.js"></script>
+<script type="text/javascript" src="js/component/header.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/page/cartTpl.js"></script>
+<script type="text/javascript" src="js/page/cart.js"></script>
+</html>

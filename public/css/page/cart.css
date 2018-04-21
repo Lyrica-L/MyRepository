@@ -1,0 +1,137 @@
+/**************
+*name：购物车页面CSS样式
+*date：2018/02/05
+*author：Liu Li
+*remarks：null
+*/
+/* 购物车列表标题 */
+.cartTittle{
+    width:1190px;height:40px;
+    line-height: 40px;
+    margin:0 auto;
+    position: relative;
+}
+.cartTittle label{
+    height:40px;
+    font-size: 20px;font-weight: bold;color: #f00;
+    border-bottom: 4px solid #f00;
+    position: absolute;top:0;left: 0;
+}
+.cartTittle label i{
+    margin-left: 5px;font-weight: bold;
+}
+/* 购物车列表表头 */
+.cartWrap{
+    width:1188px;height:50px;
+    line-height: 50px;
+    margin:0 auto;
+    border: 1px solid #66666640;
+    background: #f3f3f3;
+}
+.cartWrap ul{padding:0 0 20px 14px;}
+.cartWrap ul li,.goodsWrap ul li{float: left;}
+.cartWrap ul li.cwli_1,.goodsWrap ul li.gwli_1{width:149px}
+.cartWrap ul li.cwli_2,.goodsWrap ul li.gwli_2{width:480px;}
+.cartWrap ul li.cwli_3,.goodsWrap ul li.gwli_3{width:132px;text-align: right}
+.cartWrap ul li.cwli_4,.goodsWrap ul li.gwli_4{width:100px;text-align: center;margin-left: 48px}
+.cartWrap ul li.cwli_5,.goodsWrap ul li.gwli_5{width:115px;text-align: right;}
+.cartWrap ul li.cwli_6,.goodsWrap ul li.gwli_6{margin-left: 50px}
+.cartWrap ul li.cwli_1 input{float: left;margin:19px 10px 0 0;}
+.cartWrap ul li.cwli_1 label{cursor: pointer;}
+
+.goodsWrap ul li.gwli_2:hover,.goodsWrap ul li.gwli_6:hover{
+    color: #f00; cursor: pointer;
+}
+
+/* 购物车列表主体部分 */
+.cartMainWrap{
+    width:1190px;margin:0 auto;
+}
+.cartMainWrap h1.cartEmpty{
+    width: 100%;height: 100px;
+    text-align: center;line-height: 100px;
+    font-size: 24px;
+}
+.blackLine{
+    width:100%;height:2px;
+    margin:18px 0 14px 0;
+    background-color: #aaaaaa;
+    overflow: hidden;
+}
+.goodsWrap{
+    width:1188px;height: 144px;
+    background-color: #fff4e8;
+    border:1px solid #f1f1f1;
+}
+.goodsWrap ul{
+    padding:25px 0 30px 14px;
+}
+.goodsWrap ul li img{
+    width: 98px;height: 98px;
+    margin:-4px 0 0 14px;
+    border: 1px solid #f1f1f1;
+    cursor: pointer;
+}
+.goodsWrap ul li.gwli_5{font-weight:bold}
+
+.editGoodsNum{
+    width: 96px;height: 28px;
+    margin-top: -5px;
+    border: 1px solid #cacbcb;
+}
+.editGoodsNum input.a,.editGoodsNum input.c{
+    float: left;width: 20px;height:28px;
+    border: 0;background-color: #fff;
+}
+.editGoodsNum input.b{
+    float: left;width: 54px;height:28px;
+    text-align: center;border: 0;
+    border-left:1px solid #cacbcb;
+    border-right:1px solid #cacbcb;
+}
+/* 购物车列表结尾部分 */
+.cartFooter{
+    width:1190px;height:60px;
+    margin:0 auto;margin-top: 25px;
+    border:1px solid #c4c4c4;
+    position: relative;
+}
+.cartFooter ul{
+    margin:23px 0 0 13px;
+}
+.cartFooter ul input,.cartFooter ul label,.cartFooter ul p{float: left;margin-right:13px}
+.cartFooter ul input{margin-top: 2px}
+.cartFooter ul p,.cartFooter ul label{cursor: pointer}
+.checkGoodsNum{
+    width:120px;height:10px;
+    position: absolute;left: 735px;top:12px;
+    /*background-image: url("../../imgs/icon_5.jpg");*/
+    background-repeat:no-repeat;
+    background-position: center right;
+}
+.checkGoodsNum i{
+    color:red;padding: 0 5px;font-weight:bold
+}
+.totalPrice{
+    position: absolute;top:12px;left:902px;
+    line-height: 15px;
+}
+.totalPrice i{
+    color:#f00;
+    font-weight:bold;
+    font-size:16px;
+}
+.rebates{
+    position: absolute;bottom:10px;left:890px;
+}
+.gotoPayBtn{
+    width:115px;height:61px;border:0;
+    position: absolute;top:-1px;right:0;
+    background: #e64346;
+    color:#fff;
+    font-size: 20px;font-weight: bold;
+    text-align: center;
+    display: block;
+    cursor:pointer;
+}
+
