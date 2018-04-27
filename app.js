@@ -8,6 +8,6 @@ var app     = express();
 app.use(express.static('public'));
 
 
-app.listen(4858,function(){
+app.listen(4858, function(){
     console.log('4858 这是电商网站jq版本的开发目录')
 });
